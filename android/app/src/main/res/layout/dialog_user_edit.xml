@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="5dp"
+    android:id="@+id/cardDialog"
+    app:cardCornerRadius="20dp"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginBottom="5dp"
+    android:layout_centerHorizontal="true"
+    android:innerRadius="5dp"
+    android:shape="ring"
+    android:layout_marginTop="10dp"
+    android:thicknessRatio="1.9">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/linierBtn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="10dp"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/shareUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Share Login"
+        android:layout_marginVertical="5dp"
+        android:textColor="@color/whiteOri"
+        android:background="@drawable/gradient_btn"/>
+
+    <Button
+        android:id="@+id/resetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Password"
+        android:layout_marginVertical="5dp"
+        android:textColor="@color/whiteOri"
+        android:background="@drawable/gradient_btn"/>
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hapus User"
+        android:onClick="deleteUser"
+        android:layout_marginVertical="5dp"
+        android:textColor="@color/whiteOri"
+        android:background="@drawable/gradient_red"/>
+
+
+</LinearLayout>
+    <ProgressBar
+        android:id="@+id/progresReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Password"
+        android:layout_marginVertical="5dp"
+        android:textColor="@color/whiteOri"/>
+</LinearLayout>
+</androidx.cardview.widget.CardView>

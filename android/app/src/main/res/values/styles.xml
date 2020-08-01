@@ -1,0 +1,71 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="MenuLabelsStyle">
+        <item name="android:background">@drawable/ic_add_big</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MenuButtonsStyle">
+        <item name="fab_size">mini</item>
+        <item name="fab_showAnimation">@anim/jump_from_down</item>
+        <item name="fab_hideAnimation">@anim/jump_to_down</item>
+        <item name="fab_shadowColor">#444</item>
+        <item name="fab_colorNormal">#FFB805</item>
+        <item name="fab_colorPressed">#F2AB00</item>
+        <item name="fab_colorRipple">#D99200</item>
+    </style>
+
+    <style name="MenuButtonsSmall">
+        <item name="fab_colorNormal">#1565C0</item>
+        <item name="fab_colorPressed">#2272CD</item>
+        <item name="fab_colorRipple">#62B2FF</item>
+    </style>
+
+    <style name="MenuButtonsSmall.Green">
+        <item name="fab_colorNormal">#43A047</item>
+        <item name="fab_colorPressed">#2E7D32</item>
+        <item name="fab_colorRipple">#1B5E20</item>
+    </style>
+
+    <style name="DrawerItemTextAppearance">
+        <item name="android:fontFamily" tools:ignore="NewApi">sans-serif-light</item>
+    </style>
+
+    <style name="FabStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end|bottom</item>
+        <item name="srcCompat">@drawable/upload_file</item>
+        <item name="backgroundTint">@color/lightBlue</item>
+        <item name="tint">@color/white</item>
+        <item name="useCompatPadding">true</item>
+    </style>
+    <style name="TitleTextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:gravity">center|start</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+        <item name="android:textColor">@color/darkBlue</item>
+    </style>
+    <style name="ImageButtonStyle">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:tint">@color/lightGrey</item>
+    </style>
+
+</resources>
