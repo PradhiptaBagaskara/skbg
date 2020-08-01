@@ -1,0 +1,13 @@
+.DS_Store
+
+.idea
+*.png
+*.pdf
+*.jpg
+*.gif
+*.jpeg
+*.zip
+*.apk
+*.json
+db/
+database.php
