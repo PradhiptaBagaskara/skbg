@@ -12,8 +12,8 @@ class M_api extends CI_Model {
 
 	function getUpdate()
 	{
-		$repo = "skbg/begawan";
-		$tc = file_get_contents("https://raw.githubusercontent.com/PradhiptaBagaskara/".$repo."/master/app/release/output.json");
+		$repo = "skbg/android";
+		$tc = file_get_contents("https://raw.githubusercontent.com/PradhiptaBagaskara/".$repo."/master/app/versionName/release/output.json");
 		// $tc = file_get_contents(base_url()."/uploads/"."output.json");
 		$ta = json_decode($tc,true);
 
@@ -27,7 +27,7 @@ class M_api extends CI_Model {
 			$arr['updateRequired'] = false;
 			// $arr['downloadUrl'] = base_url()."/uploads/".$value['apkData']['outputFile'];
 
-			$arr['downloadUrl'] = "https://github.com/PradhiptaBagaskara/begawan/raw/master/app/release/".$value['apkData']['outputFile'];
+			$arr['downloadUrl'] = "https://github.com/PradhiptaBagaskara/begawan/raw/master/app/versionName/release/".$value['apkData']['outputFile'];
 		}
 		$curl = curl_init($arr['downloadUrl']);
  
