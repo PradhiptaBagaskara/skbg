@@ -7,7 +7,7 @@ apply plugin: 'com.google.firebase.crashlytics'
 android {
     signingConfigs {
         debug {
-            storeFile file('C:\\Users\\mass\\AndroidStudioProjects\\PTBegawanPolosoro\\begawan.jks')
+            storeFile file('C:\\xampp\\htdocs\\begawan-skripsi\\android\\begawan.jks')
             storePassword 'begawan'
             keyAlias = 'begawan'
             keyPassword 'begawan'
@@ -20,7 +20,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 3
-        versionName "1.1.1"
+        versionName "1.1.2"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -43,8 +43,8 @@ android {
     productFlavors {
         versionName {
             dimension = 'defaultConfig'
-            versionCode = 3
-            versionName = '1.1.1'
+            versionCode = 4
+            versionName = '1.1.2'
             targetSdkVersion 29
             minSdkVersion 21
             applicationId = 'com.pt.begawanpolosoro'
@@ -59,7 +59,7 @@ dependencies {
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.annotation:annotation:1.1.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
-    implementation 'com.google.firebase:firebase-messaging:20.1.2'
+    implementation 'com.google.firebase:firebase-messaging:20.2.4'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'com.google.firebase:firebase-core:17.2.3'
     implementation 'com.google.firebase:firebase-analytics:17.2.3'

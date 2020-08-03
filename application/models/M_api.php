@@ -87,7 +87,7 @@ function delete_dir($dirname) {
 	function sendNotif($id, $token,$title, $body,$halaman){
 		$url = "https://fcm.googleapis.com/fcm/send";
 	    $token = $token;
-	    $serverKey = 'AAAAjVYZDqE:APA91bGcCTrevxdsrr6z21lGuMKXH2ka3SyhxMFnZiP-v13nrRguVL0yZBio5LXXxM8dYPMQfuOiPetjKtHcuXqRBCgZPBmpLHcZda80Fod89FgIYr8jQhofhuhGcEzZQBcfhPEi5VE7';
+	    $serverKey = 'AAAAkwLWd5s:APA91bFSTRHvxAphFXJrXhGx_Ox12_ACR6bYFN0agkizxxcwxa_bkj0fqWbRgD2o21LnkA6mrT2ELwJAfbAEvZWwzkZ1hIE2oGkN2Uiy1JJdwX6LCbYx7dcp-zbjqYKsCOsOeH4YQrAm';
 	    // $title = "Notification title";
 	    // $body = "Hello I am from Your php server";
 	    $notification = array("sound" => "default", 'android_channel_id' => 'com.pt.begawanpolosoro');
