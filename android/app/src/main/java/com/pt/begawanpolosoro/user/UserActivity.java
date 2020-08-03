@@ -54,6 +54,8 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import static com.pt.begawanpolosoro.adapter.InitRetro.BASE_URL;
+
 
 public class UserActivity extends AppCompatActivity {
     private static final String TAG = "UserActivity";
@@ -379,7 +381,7 @@ public class UserActivity extends AppCompatActivity {
             userForm.dismiss();
 
             String shareBody = "Selamat " + getNama() +"! Login anda telah di buat.\n \nUsername: " +getUsername()+"\nPassword: "+ passwordDefault
-                    + "\n\nDownload Aplikasi di https://begawanpolosoro.com/app/download";
+                    + "\n\nDownload Aplikasi di "+BASE_URL+"app/download";
             Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
             sharingIntent.setType("text/plain");
 //            sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject Here");
